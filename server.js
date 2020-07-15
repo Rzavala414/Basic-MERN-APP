@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false}));
 app.use(morgan('tiny'));
 app.use('/api', router);
 
-// const MONGODB_URI = 'mongodb+srv://roger:roger123@youtubedb.j1imy.mongodb.net/YoutubeDb?retryWrites=true&w=majority';
+const MONGODB_URI = '';
 
 mongoose.connect(MONGODB_URI || 'mongodb://localhost/mern_youtube', {
     useNewUrlParser: true,
